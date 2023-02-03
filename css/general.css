@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	font-family: monospace;
+	background-color: #111;
+	color: #DDD;
+}
+
+
+#sectionTitle {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 0;
+}
+#sectionTitle::after {
+	content: "";
+	width: 7px;
+	margin-left: 10px;
+	height: 60px;
+	background: white;
+	display: inline-block;
+	animation: cursor-blink 1.5s steps(2) infinite;
+}
+@keyframes cursor-blink {
+	0% {
+		opacity: 0;
+	}
+}
+
+#gridSkills {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	gap: 20px;
+	background-color: #333;
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+	
+	width: 90%;
+	margin: auto;
+}
+#gridBuffer    { grid-column: 1 / 6; }
+#gridLangTitle { grid-column: 1 / 3; }
+#gridLang      { grid-column: 1 / 2; }
+#gridLangExp   { grid-column: 2 / 3; }
+#gridTechTitle { grid-column: 4 / 6; }
+#gridTech      { grid-column: 4 / 5; }
+#gridTechExp   { grid-column: 5 / 6; }
+
+#gridPort {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+	background-color: #333;
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+	
+	width: 90%;
+	margin: auto;
+}
+#gridTitle { grid-column: 1 / 3; }
+
+#titleBar {
+	background: #333;
+	height:   5px;
+	width:  100px;
+	margin-top:     5px;
+	margin-bottom: 60px;
+}
+#buffer {
+	padding-top: 200px;
+}
+#centerButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#more {
+	border: none;
+	color: white;
+	background-color: #333;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#more:hover {
+	background-color: #555;
+}
+#more:active {
+	background-color: #734985;
+}
+
+
+#landing {
+	height: 1280px;
+}
+
+
+
+#About {
+	padding-top: 75px;
+}
+#aboutSub {
+	text-align: center;
+	font-size: 30px;
+}
+#aboutDesc {
+	text-align: center;
+	font-size: 20px;
+
+	padding-bottom: 100px;
+}
+
+
+#Portfolio {
+	padding-top: 75px;
+}
+
+#Contact {
+	padding-top: 75px;
+	padding-bottom: 100px;
+}
+#contactDesc {
+	text-align: center;
+	font-size: 20px;
+}
+
+
+#footer {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background: rgb(48, 48, 48);
+}
+#footerText {
+	text-align: center;
+	font-size: 20px;
+	color: aliceblue;
+}
+
+
+#menuBar {
+	position: sticky;
+	top: 0;
+	width: 100%;
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+#menuItem {
+	float: left;
+}
+#menuLink {
+	font-size: 20px;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#menuLink:hover {
+	background-color: #555;
+}
+#menuLink:active {
+	background-color: #734985;
+}

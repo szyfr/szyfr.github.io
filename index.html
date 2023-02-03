@@ -1,13 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <canvas id="bg"></canvas>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Szyfr's home</title>
+		<link rel="stylesheet" href="css/general.css">
+	</head>
+	<body>
+		<script src="index.js"></script>
+
+		<div id="landing">
+			<div id="buffer"></div>
+			<h1  id="sectionTitle">Josh Zemenski</h1>
+			<div id="titleBar"></div>
+			<p   id="aboutDesc"> I'm a software Engineer from Michigan with a passion for Video Game development but a wide array of skills in many different languages and technologies.</p>
+			<div id="centerButton">
+				<a id="more" href="index.html#Portfolio"> See what I've done </a>
+			</div>
+		</div>
+
+		<ul id="menuBar">
+			<li id="menuItem"><a id="menuLink" href="index.html#landing">About</a></li>
+			<li id="menuItem"><a id="menuLink" href="index.html#About">Skills</a></li>
+			<li id="menuItem"><a id="menuLink" href="index.html#Portfolio">Portfolio</a></li>
+			<li id="menuItem"><a id="menuLink" href="index.html#Contact">Contact</a></li>
+		</ul>
+
+		<div id="About">
+			<h1  id="sectionTitle">Skills</h1>
+			<div id="titleBar"></div>
+			<div id="gridSkills">
+				<div id="gridBuffer"></div>
+
+				<div id="gridLangTitle"><b>Languages</b></div>
+				<div id="gridTechTitle"><b>Technologies</b></div>
+
+				<div id="gridLang">C#</div>
+				<div id="gridLangExp">[|||||]</div>
+				<div id="gridTech">MS Office</div>
+				<div id="gridTechExp">[|||||]</div>
+
+				<div id="gridLang">Odin</div>
+				<div id="gridLangExp">[|||||]</div>
+				<div id="gridTech">Unity</div>
+				<div id="gridTechExp">[|||||]</div>
+
+				<div id="gridLang">Golang</div>
+				<div id="gridLangExp">[||||-]</div>
+				<div id="gridTech">Raylib</div>
+				<div id="gridTechExp">[|||||]</div>
+
+				<div id="gridLang">Python</div>
+				<div id="gridLangExp">[||||-]</div>
+				<div id="gridTech">Git</div>
+				<div id="gridTechExp">[||||-]</div>
+
+				<div id="gridLang">C / C++</div>
+				<div id="gridLangExp">[|||--]</div>
+				<div id="gridTech">Unreal</div>
+				<div id="gridTechExp">[|||--]</div>
+
+				<div id="gridLang">Kotlin</div>
+				<div id="gridLangExp">[|||--]</div>
+				<div id="gridTech">Godot</div>
+				<div id="gridTechExp">[|||--]</div>
+
+				<div id="gridLang">Java</div>
+				<div id="gridLangExp">[|||--]</div>
+				<div id="gridTech">SQL / MySQL</div>
+				<div id="gridTechExp">[||---]</div>
+
+				<div id="gridLang">x86_64 Assembly</div>
+				<div id="gridLangExp">[||---]</div>
+				<div id="gridLang">Rust</div>
+				<div id="gridLangExp">[||---]</div>
+
+				<div id="gridLang">Typescript</div>
+				<div id="gridLangExp">[||---]</div>
+				
+				<div id="gridBuffer"></div>
+			</div>
+		</div>
+
+		<div id="Portfolio">
+			<h1  id="sectionTitle">Portfolio</h1>
+			<div id="titleBar"></div>
+			<div id="gridPort">
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+
+				<div id="gridTitle" style="font-size: 40px;"><b>Personal Projects</b></div>
+				<div id="gridTitle" style="font-size: 20px;">Games that I'm passionate about</div>
+				<div id="gridGame">
+					<a href="https://github.com/szyfr/FanGS" target="_blank" style="float: inline-start;"><img src="images/am.png" width="250px" height="250px"></a>
+					<p><b>Alius Mundus</b></p>
+					<p style="font-size: 20px;">Grande Strategy<br>Play as a nation of your choosing in worlds of fantasy and adventure. Made to be extremely moddable and all develpoment is Livestreamed: <a href="https://www.youtube.com/@szyfr9340/streams">HERE</a><br><br>Made using Odin and Raylib</p>
+				</div>
+				<div id="gridGame">
+					<a href="https://github.com/szyfr/Monochrome" target="_blank" style="float: inline-start;"><img src="images/mono.png" width="250px" height="250px"></a>
+					<p><b>Monochrome</b></p>
+					<p style="font-size: 20px;">Monster-Collection RPG<br>Catch and train monsters in a familiar, but revitalized world in a way never before;<br>Taking direct control of the monsters themselves.<br><br>Made using Odin and Raylib</p>
+				</div>
+				
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+
+				<div id="gridTitle" style="font-size: 40px;"><b>Game Jams</b></div>
+				<div id="gridTitle" style="font-size: 20px;">Games made in a short time as a challenge</div>
+				<div id="gridGame">
+					<a href="https://szyfr.itch.io/frostbitten-survival" target="_blank" style="float: inline-start;"><img src="images/frostbitten.png" width="250px" height="250px"></a>
+					<p><b>Frostbitten Survival<br>Kalorian KJam (72-hrs)</b></p>
+					<p style="font-size: 20px;">2D Survival Rogue-lite<br>Play as multiple adventurers as they try to survive the cold winter.<br><br>Made using Unity</p>
+				</div>
+				<div id="gridGame">
+					<a href="https://szyfr.itch.io/dilberts-eggscelent-adventure" target="_blank" style="float: inline-start;"><img src="images/dilbert.png" width="250px" height="250px"></a>
+					<p><b>Dilbert's Eggcelent Adventure<br>Mix and Game Jam 2020 (48-hrs)</b></p>
+					<p style="font-size: 20px;">2D Bullet Hell<br>Help Dilbert get to the end of the mazes so that he can have a good balanced breakfast.<br><br>Made using Unity</p>
+				</div>
+				<div id="gridGame">
+					<a href="https://ldjam.com/events/ludum-dare/51/tile-hopper" target="_blank" style="float: inline-start;"><img src="images/tiles.png" width="250px" height="250px"></a>
+					<p><b>Tile Hopper<br>Ludum Dare 51 Compo (48-hrs)</b></p>
+					<p style="font-size: 20px;">3D Survival<br>A fast paced game of survival, how long can you stay alive?<br><br>Made using Unity</p>
+				</div>
+				<div id="gridGame">
+					<a href="https://ldjam.com/events/ludum-dare/52/fish-outta-hell" target="_blank" style="float: inline-start;"><img src="images/fish.png" width="250px" height="250px"></a>
+					<p><b>Fish Outta Hell<br>Ludum Dare 52 Jam (72-hrs)</b></p>
+					<p style="font-size: 20px;">2D Fishing sim and Survival<br>Fish for rare creatures in and survive Beelzabub's onslaught as you try to escape from Hell.<br><br>Made using Unity</p>
+				</div>
+				
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+
+				<div id="gridTitle" style="font-size: 40px;"><b>12 Games a year</b></div>
+				<div id="gridTitle" style="font-size: 20px;"><a href="https://www.youtube.com/playlist?list=PLZ-qq3bcPpgY4pkN6jbtqun6SHyzJJsqb">LINK to playlist</a><br>A challenge between two friends to create a full new game every month from November 2022 -> October 2023</div>
+				<div id="gridGame">
+					<a href="https://szyfr.itch.io/for-the-trees" target="_blank" style="float: inline-start;"><img src="images/trees.png" width="250px" height="250px"></a>
+					<p><b>November 2022<br>For the Trees</b></p>
+					<p style="font-size: 20px;">2D Survival<br>You play as the Sorax, He speaks for the Trees. <br>But the forest is dying, so you must break some knees!<br><br>Made using Odin and Raylib</p>
+				</div>
+				<div id="gridGame">
+					<a href="https://szyfr.itch.io/first-snow" target="_blank" style="float: inline-start;"><img src="images/snow.png" width="250px" height="250px"></a>
+					<p><b>December 2022<br>First Snow</b></p>
+					<p style="font-size: 20px;">2D Action Survival<br>Winter has arrived, and the whole neighborhood has gathered for the greatest snowball fight ever.<br><br>Made using Odin and Raylib</p>
+				</div>
+				<div id="gridGame">
+					<a href="https://ldjam.com/events/ludum-dare/52/fish-outta-hell" target="_blank" style="float: inline-start;"><img src="images/fish.png" width="250px" height="250px"></a>
+					<p><b>January 2023<br>Fish Outta Hell</b></p>
+					<p style="font-size: 20px;">2D Fishing sim and Survival<br>Made in 72 hours also for Ludum Dare 52 Jam<br>Fish for rare creatures in and survive Beelzabub's onslaught as you try to escape from Hell.<br><br>Made using Unity</p>
+				</div>
+
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+				<div id="gridTitle"></div>
+			</div>
+		</div>
+
+		<div id="Contact">
+			<h1  id="sectionTitle">Contact</h1>
+			<div id="titleBar"></div>
+			<p   id="contactDesc"><a href="mailto:joshszyfr@gmail.com">Email</a></p>
+			<p   id="contactDesc"><a href="github.com/szyfr">Github</a></p>
+			<p   id="contactDesc"><a href="szyfr.itch.io">Itch.io</a></p>
+			<p   id="contactDesc"><a href="youtube.com/@szyfr9340">Youtube</a></p>
+		</div>
+
+		<div id="footer">
+			<p id="footerText">JOSHUA "SZYFR" ZEMENSKI ©2023</p>
+		</div>
+	</body>
 </html>
